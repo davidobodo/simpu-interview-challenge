@@ -1,15 +1,29 @@
 import React from 'react';
 import Header from './layouts/Header';
 import SideBar from './layouts/SideBar';
+import Body from './layouts/Body';
+
+import styled from 'styled-components';
+
+const AppWrapper = styled.div`
+
+  .appWrapper__body{
+    display:flex;
+  }
+
+`
+
+
 
 const App = () => {
   return (
-    <div className="App">
+    <AppWrapper>
       <Header />
-      <div>
+      <div className='appWrapper__body'>
         <SideBar />
+        <Body />
       </div>
-    </div>
+    </AppWrapper>
   );
 };
 
