@@ -6,7 +6,7 @@ const CommentsWrapper = styled.div`
 
 `;
 
-const Chats = () => {
+const Comments = () => {
     return (
         <CommentsWrapper>
 
