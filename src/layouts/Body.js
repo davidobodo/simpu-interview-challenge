@@ -40,6 +40,11 @@ const BodyWrapper = styled.div`
                     }
                 }
             }
+
+            &__body{
+                display: flex;
+                height: calc(100vh - 104px);
+            }
         }
     }
 `;
@@ -62,7 +67,7 @@ const Body = () => {
                             <button>Assign</button>
                         </div>
                     </div>
-                    <div>
+                    <div className="windows__body">
                         <ChatWindow />
                         <Comments />
                     </div>

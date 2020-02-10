@@ -24,6 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     
     h3{
         font-size: 15px;
+        color: #212242;
     }
     
     h4{

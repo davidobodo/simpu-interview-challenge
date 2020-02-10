@@ -10,6 +10,10 @@ padding-bottom: 13px;
 margin-bottom: 13px;
 border-bottom: 1px solid #EFF3F5;
 
+&:last-child{
+    border-bottom: none;
+}
+
 .left{
     margin-right: 8px;
 }
