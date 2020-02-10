@@ -10,7 +10,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        font-family: sans-serif;
+        font-family: 'IBM Plex Sans', sans-serif;
+        width: 100vw;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     h2{
@@ -36,4 +39,4 @@ export const GlobalStyles = createGlobalStyle`
     p{
         font-size: 14px;
     }
-`
+`;

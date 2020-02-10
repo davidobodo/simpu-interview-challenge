@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './layouts/Header';
 
 const App = () => {
   return (
     <div className="App">
-      How far my guy
+      <Header />
     </div>
   );
 }
