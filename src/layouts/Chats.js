@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Chat from '../components/Chat';
 
 
 const ChatsWrapper = styled.div`
@@ -24,6 +25,12 @@ const ChatsWrapper = styled.div`
             border-radius: 9px;
         }
     }
+
+    section{
+        padding: 21px;
+
+        
+    }
 `;
 
 const Chats = () => {
@@ -35,6 +42,13 @@ const Chats = () => {
                 <a>Snoozed</a>
                 <a>Trash</a>
             </nav>
+            <section>
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+            </section>
         </ChatsWrapper>
     )
 };

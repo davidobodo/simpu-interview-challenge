@@ -21,21 +21,25 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 20px;
         color: #212242;
     }
-
+    
     h3{
         font-size: 15px;
     }
-
+    
     h4{
         font-size: 14px;
+        color: #212242;
     }
-
+    
     h5{
         font-size: 13px;
+        font-weight: 200;
+        color: #212242;
     }
 
     h6{
         font-size: 12px;
+        color: #595e8a;
     }
 
     p{
