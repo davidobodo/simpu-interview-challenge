@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import attachment from '../assets/img/attachment.svg';
+import reply from '../assets/img/reply.svg';
 
 
 const ChatWindowWrapper = styled.div`
@@ -14,10 +15,27 @@ const ChatWindowWrapper = styled.div`
     .message{
         margin-bottom: 30px;
 
-        h4{
-            margin-bottom: 10px;
+        &__header{
+            display: flex;
+            justify-content: space-between;
+
+            h4{
+                margin-bottom: 10px;
+            }
+
+            .reply{
+                color: #6554c0;
+                display: flex;
+                align-items: center;
+
+                img{
+                    margin-right: 5px;
+                }
+            }
+
         }
 
+        
         p{
             color: #595e8a;
             background-color: #fbfdff;
@@ -30,9 +48,36 @@ const ChatWindowWrapper = styled.div`
             margin-bottom: 10px;
         }
 
-        h6{
-            color: #212242;
-            opacity: 0.5;
+        &__footer{
+            display: flex;
+            align-items: center;
+            
+            h6{
+                color: #212242;
+                opacity: 0.5;
+                margin-right: 10px;
+            }
+
+            .tick{
+
+                &__one{
+                    border-right: 2px solid #6554c0;
+                    border-bottom: 2px solid #6554c0;
+                    width: 6px;
+                    height: 14px;
+                    display: inline-block;
+                    transform: rotate(45deg);
+                }
+
+                &__two{
+                    border-right: 2px solid #6554c0;
+                    border-bottom: 2px solid #6554c0;
+                    width: 6px;
+                    height: 14px;
+                    display: inline-block;
+                    transform: rotate(45deg);
+                }
+            }
         }
     }
 
@@ -76,39 +121,63 @@ const ChatWindow = () => {
         <ChatWindowWrapper>
             <h3>WhatsApp for Business: Don't forget to start your free trial</h3>
             <div className="message">
-                <h4>Zarela Reed</h4>
+                <div className="message__header">
+                    <h4>Zarela Reed</h4>
+                    <h4 className="reply">
+                        <img src={reply} alt='img' />
+                        Reply this conversation</h4>
+                </div>
                 <p>Having a baby can be a nerve wracking experience for new parents –
                     not the nine months of pregnancy, I’m talking about after the infant
                     is brought home from the hospital. It’s always the same thing, by the
                     time they have their third child they have it all figured out, but with
                     number one it’s a learning thing.</p>
-                <div>
+                <div className="message__footer">
                     <h6>12:59pm</h6>
-                    <span className="ticks"></span>
+                    <span className="tick">
+                        <span className="tick__one"></span>
+                        <span className="tick__two"></span>
+                    </span>
                 </div>
             </div>
             <div className="message">
-                <h4>Zarela Reed</h4>
+                <div className="message__header">
+                    <h4>Zarela Reed</h4>
+                    <h4 className="reply">
+                        <img src={reply} alt='img' />
+                        Reply this conversation</h4>
+                </div>
                 <p className="received">Having a baby can be a nerve wracking experience for new parents –
                     not the nine months of pregnancy, I’m talking about after the infant
                     is brought home from the hospital. It’s always the same thing, by the
                     time they have their third child they have it all figured out, but with
                     number one it’s a learning thing.</p>
-                <div>
+                <div className="message__footer">
                     <h6>12:59pm</h6>
-                    <span className="ticks"></span>
+                    <span className="tick">
+                        <span className="tick__one"></span>
+                        <span className="tick__two"></span>
+                    </span>
                 </div>
             </div>
             <div className="message">
-                <h4>Zarela Reed</h4>
+                <div className="message__header">
+                    <h4>Zarela Reed</h4>
+                    <h4 className="reply">
+                        <img src={reply} alt='img' />
+                        Reply this conversation</h4>
+                </div>
                 <p className="received">Having a baby can be a nerve wracking experience for new parents –
                     not the nine months of pregnancy, I’m talking about after the infant
                     is brought home from the hospital. It’s always the same thing, by the
                     time they have their third child they have it all figured out, but with
                     number one it’s a learning thing.</p>
-                <div>
+                <div className="message__footer">
                     <h6>12:59pm</h6>
-                    <span className="ticks"></span>
+                    <span className="tick">
+                        <span className="tick__one"></span>
+                        <span className="tick__two"></span>
+                    </span>
                 </div>
             </div>
             <div className="input-field">
