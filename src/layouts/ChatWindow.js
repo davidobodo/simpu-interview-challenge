@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import attachment from '../assets/img/attachment.svg';
 
 
 const ChatWindowWrapper = styled.div`
@@ -39,12 +40,41 @@ const ChatWindowWrapper = styled.div`
         background-color: #6554c0 !important;
         color: #ffffff !important;
     }
+
+    .input-field{
+        padding: 16px;
+        border-radius: 10.1px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+        border: solid 0.8px #e9edf0;
+        background-color: #ffffff;
+
+        input{
+            display: block;
+            background-color: transparent;
+            border: none;
+            margin-bottom: 16px;
+            font-size: 14px;
+            outline: none;
+            width: 100%;
+
+            ::placeholder{
+                color: #595e8a;
+            }
+        }
+
+        img{
+            width: 17px;
+            height: 15px;
+        }
+
+
+    }
 `;
 
 const ChatWindow = () => {
     return (
         <ChatWindowWrapper>
-            <h3>WhatsApp for Business: Don;t forget to start your free trial</h3>
+            <h3>WhatsApp for Business: Don't forget to start your free trial</h3>
             <div className="message">
                 <h4>Zarela Reed</h4>
                 <p>Having a baby can be a nerve wracking experience for new parents –
@@ -80,6 +110,10 @@ const ChatWindow = () => {
                     <h6>12:59pm</h6>
                     <span className="ticks"></span>
                 </div>
+            </div>
+            <div className="input-field">
+                <input type="text" placeholder="Type a message ..." />
+                <img src={attachment} alt="attachment" />
             </div>
         </ChatWindowWrapper>
     )
