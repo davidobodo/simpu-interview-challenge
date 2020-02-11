@@ -14,7 +14,7 @@ export const DIALOGUE = [
     },
     {
         id: 2,
-        name: 'Zarela Reed',
+        name: 'Collins Iheagwara',
         reply: false,
         content: `Having a baby can be a nerve wracking experience for new parents –
                     not the nine months of pregnancy, I’m talking about after the infant
@@ -27,7 +27,7 @@ export const DIALOGUE = [
     },
     {
         id: 3,
-        name: 'Zarela Reed',
+        name: 'Collins Iheagwara',
         reply: false,
         content: `Having a baby can be a nerve wracking experience for new parents –
                     not the nine months of pregnancy, I’m talking about after the infant

@@ -47,6 +47,11 @@ h2{
                         height: 16px;
                         object-fit: cover;
                         border-radius: 50%;
+                        margin-left: -5px;
+
+                        &:first-child{
+                            margin-left: 0px;
+                        }
                     }
 
                 }

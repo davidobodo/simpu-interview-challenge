@@ -8,7 +8,7 @@ export const CommentsWrapper = styled.div`
     flex-basis: 300px;
 
     h3{
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     .form-field{
