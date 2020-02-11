@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ChatWindowWrapper = styled.div`
+export const ActiveChatWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 19px 35px;

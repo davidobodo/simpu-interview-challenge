@@ -5,9 +5,9 @@ import Body from './layouts/body';
 
 import styled from 'styled-components';
 
-const AppWrapper = styled.div`
+const Container = styled.div`
 
-  .appWrapper__body{
+  .container__body{
     display:flex;
 
     @media(max-width: 765px){
@@ -19,13 +19,13 @@ const AppWrapper = styled.div`
 
 const App = () => {
   return (
-    <AppWrapper>
+    <Container>
       <Header />
-      <div className='appWrapper__body'>
+      <div className='container__body'>
         <SideBar />
         <Body />
       </div>
-    </AppWrapper>
+    </Container>
   );
 };
 

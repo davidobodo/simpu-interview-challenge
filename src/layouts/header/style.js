@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderWrapper = styled.div`
+export const ContainerHeader = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -29,7 +29,7 @@ padding-right: 20px;
         opacity: 0.7;
     }
 
-    h4{
+    &__org-name{
         color: #ffffff;
         margin-right: 10px;
         font-weight: 200;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChatsWrapper } from './style';
-import Chat from '../chat';
+import Chat from '../../../components/chat';
 import { ALL_CHATS } from './constants';
 
 
