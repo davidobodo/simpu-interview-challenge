@@ -4,6 +4,10 @@ export const ChatsWrapper = styled.div`
     border-right: 1px solid #EFF3F5;
     width: 360px;
 
+    @media(max-width: 765px){
+        width: 100%;
+    }
+
     nav{
         padding: 14px 21px;
         border-bottom: 1px solid #EFF3F5;

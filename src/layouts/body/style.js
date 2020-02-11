@@ -14,6 +14,10 @@ h2{
     .windows{
         flex: 1;
 
+        @media(max-width: 765px){
+            display: none;
+        }
+
         &__header{
             display: flex;
             justify-content: space-between;
@@ -80,6 +84,8 @@ h2{
             display: flex;
             height: 900px;
         }
+
+        
     }
 }
 `;
