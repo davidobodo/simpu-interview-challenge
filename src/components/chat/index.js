@@ -3,22 +3,47 @@ import { ChatWrapper } from './style';
 import socialIcon from '../../assets/img/social-icon.svg';
 import attachment from '../../assets/img/attachment.svg';
 
+const Chat = ({
+    name,
+    header,
+    content,
+    sent,
+    unread
+}) => {
 
+    const renderUnread = () => {
+        if (unread) {
+            return <div className='right__unread'>{unread}</div>
+        } else {
+            return <div></div>
+        }
+    };
 
+    const renderHeader = () => {
+        if (header.length >= 65) {
+            header = header.substr(0, 39) + "..."
+        }
+        return <h5>{header}</h5>
+    }
 
-const Chat = () => {
+    const renderContent = () => {
+        if (content.length >= 65) {
+            content = content.substr(0, 45) + "..."
+        }
+        return <h6>{content}</h6>
+    }
+
     return (
         <ChatWrapper>
             <div className='left'><img src={socialIcon} alt="social" /></div>
             <div className='center'>
-                <h4>Zarela Reed</h4>
-                <h5>Used Electronic Test Equipment Not Working in the
-                        </h5>
-                <h6>Hello guys, i have been unable to make use of</h6>
+                <h4>{name}</h4>
+                {renderHeader()}
+                {renderContent()}
             </div>
             <div className='right'>
-                <div className='right__time'>19hrs</div>
-                <div className='right__unread'>2</div>
+                <div className='right__time'>{sent}</div>
+                {renderUnread()}
                 <div className='right__clip'><img src={attachment} alt="attachment" /></div>
             </div>
         </ChatWrapper>

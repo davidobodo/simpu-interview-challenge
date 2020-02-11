@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ChatsWrapper = styled.div`
     border-right: 1px solid #EFF3F5;
-    width: 405px;
+    width: 360px;
 
     nav{
         padding: 14px 21px;
@@ -24,7 +24,5 @@ export const ChatsWrapper = styled.div`
 
     section{
         padding: 21px;
-
-        
     }
 `;
