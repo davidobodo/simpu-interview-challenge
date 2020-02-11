@@ -9,6 +9,10 @@ const AppWrapper = styled.div`
 
   .appWrapper__body{
     display:flex;
+
+    @media(max-width: 765px){
+      height: calc(100vh - 42px);
+    }
   }
 
 `;
