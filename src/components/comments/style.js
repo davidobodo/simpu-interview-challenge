@@ -11,25 +11,6 @@ export const CommentsWrapper = styled.div`
         margin-bottom: 15px;
     }
 
-    .comment-details{
-        display: flex;
-        margin-bottom: 15px;
-
-        img{
-            width 28px;
-            height: 28px;
-            border-radius: 50%;
-            margin-right: 5px;
-        }
-
-        h6{
-            flex: 1;
-            background-color: #f6fafd;
-            border-radius: 24px;
-            padding: 11px;
-        }
-    }
-
     .form-field{
         display: flex;
         align-items: center;
