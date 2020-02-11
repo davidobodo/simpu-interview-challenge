@@ -13,6 +13,7 @@ import more from '../../assets/img/more.svg';
 
 
 
+
 const Body = () => {
     return (
         <BodyWrapper>

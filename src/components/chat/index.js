@@ -33,6 +33,7 @@ const Chat = ({
         return <h6>{content}</h6>
     }
 
+
     return (
         <ChatWrapper>
             <div className='left'><img src={socialIcon} alt="social" /></div>
