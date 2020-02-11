@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 
 const CommentsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     padding: 19px 10px;
     flex-shrink: 0;
     flex-basis: 300px;
@@ -32,23 +36,39 @@ const CommentsWrapper = styled.div`
 
     .form-field{
         display: flex;
+        align-items: center;
+        margin-top: auto;
 
         img{
             margin-right: 5px;
-            width 28px;
-            height: 28px;
+            width 33px;
+            height: 33px;
             border-radius: 50%;
         }
 
         &__input{
             background-color: #f6fafd;
             border-radius: 24px;
-            padding: 9px 11px;
+            padding: 4px 11px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
 
             input{
                 outline: none;
                 border: none;
                 background-color: transparent;
+                font-size: 12px;
+            }
+
+            svg{
+                background-color: #6554c0;
+                color: #ffffff;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                padding: 6px;
             }
         }
 
@@ -90,7 +110,8 @@ const Comments = () => {
             <div className="form-field">
                 <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="img3" />
                 <div className="form-field__input">
-                    <input type="text" placeholder="Write a comment" />
+                    <input type="text" placeholder="Write a comment..." />
+                    <FontAwesomeIcon icon={faPaperPlane} />
                 </div>
             </div>
         </CommentsWrapper>

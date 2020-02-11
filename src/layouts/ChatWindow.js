@@ -5,6 +5,8 @@ import reply from '../assets/img/reply.svg';
 
 
 const ChatWindowWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     padding: 19px 35px;
     border-right: 1px solid #EFF3F5;
 
@@ -92,6 +94,7 @@ const ChatWindowWrapper = styled.div`
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
         border: solid 0.8px #e9edf0;
         background-color: #ffffff;
+        margin-top: auto;
 
         input{
             display: block;
@@ -180,6 +183,7 @@ const ChatWindow = () => {
                     </span>
                 </div>
             </div>
+
             <div className="input-field">
                 <input type="text" placeholder="Type a message ..." />
                 <img src={attachment} alt="attachment" />

@@ -6,7 +6,6 @@ import Chat from '../components/Chat';
 const ChatsWrapper = styled.div`
     border-right: 1px solid #EFF3F5;
     width: 405px;
-    height: 100%;
 
     nav{
         padding: 14px 21px;

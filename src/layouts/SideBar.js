@@ -8,7 +8,6 @@ import schedule from '../assets/img/schedule.svg';
 const SideBarWrapper = styled.div`
     background-color: #f6fafd;
     width: 50px;
-    height: 100vh;
     padding-top: 30px;
 
     img{

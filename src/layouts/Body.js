@@ -20,7 +20,6 @@ const BodyWrapper = styled.div`
     }
 
     .body__content{
-        height: calc(100vh - 55px);
         display: flex;
 
         .windows{
@@ -29,7 +28,7 @@ const BodyWrapper = styled.div`
             &__header{
                 display: flex;
                 justify-content: space-between;
-                padding: 14px 16px 14px 32px;
+                padding: 13px 16px 13px 32px;
                 border-bottom: 1px solid #EFF3F5;
 
                 &__options{
@@ -85,7 +84,7 @@ const BodyWrapper = styled.div`
 
             &__body{
                 display: flex;
-                height: calc(100vh - 104px);
+                height: 900px;
             }
         }
     }
