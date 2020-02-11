@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './layouts/Header';
-import SideBar from './layouts/SideBar';
-import Body from './layouts/Body';
+import Header from './layouts/header';
+import SideBar from './layouts/sidebar';
+import Body from './layouts/body';
 
 import styled from 'styled-components';
 
@@ -11,9 +11,7 @@ const AppWrapper = styled.div`
     display:flex;
   }
 
-`
-
-
+`;
 
 const App = () => {
   return (

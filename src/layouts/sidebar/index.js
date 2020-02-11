@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import analytics from '../assets/img/analytics.svg';
-import comment from '../assets/img/comment.svg';
-import happy from '../assets/img/happy.svg';
-import schedule from '../assets/img/schedule.svg';
+import analytics from '../../assets/img/analytics.svg';
+import comment from '../../assets/img/comment.svg';
+import happy from '../../assets/img/happy.svg';
+import schedule from '../../assets/img/schedule.svg';
 
 const SideBarWrapper = styled.div`
     background-color: #f6fafd;
