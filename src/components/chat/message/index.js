@@ -24,7 +24,7 @@ const Message = ({ message }) => {
         <MessageWrapper>
             <div className="message__header">
                 <h4>{name}</h4>
-                {is_user_msg && <h4 className="reply">
+                {!is_user_msg && <h4 className="reply">
                     <img src={replyIcon} alt='img' />
                     Reply this conversation
                 </h4>}
