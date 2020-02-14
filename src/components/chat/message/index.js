@@ -3,12 +3,10 @@ import replyIcon from '../../../assets/img/reply.svg';
 import { MessageWrapper } from './style';
 
 const Message = ({ message }) => {
-    const { name, reply, content, time, status, is_user_msg } = message;
+    const { name, content, time, status, is_user_msg } = message;
 
     const renderTick = () => {
         switch (status) {
-            case 'sent':
-                return <span></span>;
             case 'delivered':
                 return <span className="tick"></span>;
             case 'read':
@@ -26,7 +24,7 @@ const Message = ({ message }) => {
         <MessageWrapper>
             <div className="message__header">
                 <h4>{name}</h4>
-                {reply && <h4 className="reply">
+                {is_user_msg && <h4 className="reply">
                     <img src={replyIcon} alt='img' />
                     Reply this conversation
                 </h4>}

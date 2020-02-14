@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChatsWrapper } from './style';
-import Chat from '../../../components/chat';
+import ChatPreview from '../../../components/chatPreview';
 import { ALL_CHATS } from './constants';
 
 
@@ -10,15 +10,15 @@ const Chats = () => {
     return (
         <ChatsWrapper>
             <nav>
-                <a className="active">Open</a>
-                <a>Archived</a>
-                <a>Snoozed</a>
-                <a>Trash</a>
+                <button className="active">Open</button>
+                <button>Archived</button>
+                <button>Snoozed</button>
+                <button>Trash</button>
             </nav>
             <section>
                 {ALL_CHATS.map((chat) => {
                     const { id, name, header, content, sent, unread } = chat
-                    return <Chat
+                    return <ChatPreview
                         key={id}
                         name={name}
                         header={header}

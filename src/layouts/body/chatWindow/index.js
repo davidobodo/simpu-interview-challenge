@@ -3,7 +3,7 @@ import { ChatWindowWrapper } from './style';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import ActiveChat from '../../../components/activeChat';
+import Chat from '../../../components/chat';
 import Comments from '../../../components/comments';
 import clock from '../../../assets/img/clock.svg';
 import dustbin from '../../../assets/img/dustbin.svg';
@@ -31,7 +31,7 @@ const ChatWindow = () => {
                 </div>
             </div>
             <div className="body">
-                <ActiveChat />
+                <Chat />
                 <Comments />
             </div>
         </ChatWindowWrapper>
