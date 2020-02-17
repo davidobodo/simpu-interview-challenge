@@ -16,6 +16,7 @@ border-bottom: 1px solid #EFF3F5;
 
 .center{
     flex: 1;
+    overflow-x: hidden;
 
     h4{
         margin-bottom: 5px;
@@ -23,10 +24,16 @@ border-bottom: 1px solid #EFF3F5;
 
     h5{
         margin-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow-x: hidden;
     }
 
     h6{
         opacity: 0.75;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow-x: hidden;
     }
 }
 

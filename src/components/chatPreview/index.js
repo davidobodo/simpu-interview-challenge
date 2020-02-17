@@ -19,28 +19,13 @@ const ChatPreview = ({
         }
     };
 
-    const renderHeader = () => {
-        if (header.length >= 65) {
-            header = header.substr(0, 39) + "..."
-        }
-        return <h5>{header}</h5>
-    }
-
-    const renderContent = () => {
-        if (content.length >= 65) {
-            content = content.substr(0, 45) + "..."
-        }
-        return <h6>{content}</h6>
-    }
-
-
     return (
         <ChatPreviewWrapper>
             <div className='left'><img src={socialIcon} alt="social" /></div>
             <div className='center'>
                 <h4>{name}</h4>
-                {renderHeader()}
-                {renderContent()}
+                <h5>{header}</h5>
+                <h6>{content}</h6>
             </div>
             <div className='right'>
                 <div className='right__time'>{sent}</div>
