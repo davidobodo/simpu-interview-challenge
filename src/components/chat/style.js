@@ -10,6 +10,11 @@ export const ChatWrapper = styled.div`
         margin-bottom: 51px;
     }
 
+    .message-wrapper{
+        height: 50vh;
+        overflow-y: scroll;
+    }
+
     .input-field{
         padding: 16px;
         border-radius: 10.1px;

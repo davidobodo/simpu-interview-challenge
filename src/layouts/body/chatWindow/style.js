@@ -71,6 +71,6 @@ export const ChatWindowWrapper = styled.div`
 
     .body{
         display: flex;
-        height: 900px;
+        height: calc(100vh - 146px);
     }
 `;
