@@ -11,7 +11,7 @@ export const ChatWrapper = styled.div`
     }
 
     .message-wrapper{
-        height: 50vh;
+        height: calc(100vh - 340px);
         overflow-y: scroll;
     }
 

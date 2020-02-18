@@ -11,6 +11,11 @@ export const CommentsWrapper = styled.div`
         margin-bottom: 25px;
     }
 
+    .comment-wrapper{
+        height: calc(100vh - 261px);
+        overflow-y: scroll;
+    }
+
     .form-field{
         display: flex;
         align-items: center;

@@ -39,5 +39,61 @@ export const ALL_CHATS = [
         sent: '19hrs',
         unread: 5
     },
+    {
+        id: 6,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 0
+    },
+    {
+        id: 7,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 1
+    },
+    {
+        id: 8,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 20
+    },
+    {
+        id: 9,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 15
+    },
+    {
+        id: 10,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 3
+    },
+    {
+        id: 11,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 0
+    },
+    {
+        id: 12,
+        name: 'Kari Granlese',
+        header: 'Used Electronic Test Equipment Not Working Very Well Because Of Cold Temperature',
+        content: 'Helli guys, i have been unable to use the test equipment because of the weather recently.',
+        sent: '19hrs',
+        unread: 2
+    },
 
 ]

@@ -29,5 +29,7 @@ export const ChatsWrapper = styled.div`
 
     section{
         padding: 21px;
+        height: calc(100vh - 147px);
+        overflow-y: scroll;
     }
 `;
